@@ -6,37 +6,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Style the header */
-header {
-  background-color: #666;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
-
 /* Container for flexboxes */
 section {
   display: -webkit-flex;
   display: flex;
 }
 
-/* Style the navigation menu */
-nav {
-  -webkit-flex: ;
-  -ms-flex: 1;
-  flex: 0.2;
-  background: #ccc;
-  padding: 20px;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  display:inline;
-
-}
 div.nav-bar {
   -webkit-flex: 3;
   -ms-flex: 3;
@@ -45,9 +20,6 @@ div.nav-bar {
   padding: 10px;
   color :  rgb(245, 130,20 , 1);
   background-color: white ;
-
-
-
 }
 
 /* Style the content */
@@ -88,23 +60,8 @@ footer {
 
 }
 
-/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  section {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
 .column {
   float: left;
   width: 33.3%;
   padding: 5px;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
 }
